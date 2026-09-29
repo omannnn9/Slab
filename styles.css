@@ -11,7 +11,8 @@ button {color: red;
 
 div {display: flex;
       flex-direction: row;
-     gap: 10px;}
+     gap: 10px;
+     justify-content: center;}
 
 aside{flex: 1;
       margin: 20px;}
