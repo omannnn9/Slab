@@ -3,6 +3,9 @@ body {background-color: black;
 
 h1 {font-size: 50px;}
 
-canvas{border: 2px solid white;}
+canvas {border: 2px solid white;}
 
-button{color: red;}
+button {color: red;
+       padding: 10px;}
+
+body {display: flex;}
