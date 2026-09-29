@@ -8,5 +8,5 @@ canvas {border: 2px solid white;}
 button {color: red;
        padding: 10px;}
 
-body {display: flex;
+div {display: flex;
       flex-direction: row;}
