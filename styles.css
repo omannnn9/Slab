@@ -11,6 +11,7 @@ button {color: red;
 div {display: flex;
       flex-direction: row;}
 
-aside{flex: 1;}
+aside{flex: 1;
+      margin: 20px;}
 
 main{flex: 3;}
