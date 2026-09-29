@@ -10,3 +10,7 @@ button {color: red;
 
 div {display: flex;
       flex-direction: row;}
+
+aside{flex: 1;}
+
+main{flex: 3;}
