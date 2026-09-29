@@ -9,4 +9,4 @@ button {color: red;
        padding: 10px;}
 
 body {display: flex;
-      flex-direction: column;}
+      flex-direction: row;}
