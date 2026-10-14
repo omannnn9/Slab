@@ -26,3 +26,9 @@ main{flex: 3;}
 header{display:flex;
        justify-content: space-between;
        align-items: center;}
+
+a {
+color: white;
+padding: 10px;
+text-decoration: none;
+}
