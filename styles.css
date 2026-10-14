@@ -16,7 +16,10 @@ div {display: flex;
      align-items: center;}
 
 aside{flex: 1;
-      margin: 20px;}
+      margin: 20px;
+      background-color: #111111;
+      width: 220px;
+      boreder-right:1px solid #333333;}
 
 main{flex: 3;}
 
