@@ -1,6 +1,6 @@
 const canvas = document.querySelector("canvas");
 let ballX = 400;
-let ballY = 250;
+let ballY = 100;
 const ctx = canvas.getContext("2d");
 
 ctx.beginPath();
