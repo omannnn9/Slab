@@ -1,43 +1,153 @@
-body {background-color: black;
-      color: white;
-      min-height: 100vh;}
+/* ===== GENERAL STYLING ===== */
 
-h1 {font-size: 50px;}
-
-canvas {border: 2px solid white;}
-
-button {color: red;
-       padding: 10px;}
-
-div {display: flex;
-      flex-direction: row;
-     gap: 10px;
-     justify-content: center;
-     align-items: center;}
-
-main{flex: 3;}
-
-header{display:flex;
-       justify-content: space-between;
-       align-items: center;}
-a {
-color: white;
-padding: 10px;
-text-decoration: none;
+body {
+    background-color: #080808;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-a:hover{color: #00FF9C;
-       }
+/* ===== HEADER ===== */
 
-.sidebar{flex: 1;
-         margin: 20px;
-         background-color: #111111;
-         width: 220px;
-         border-right:1px solid #333333;}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #111111;
+    border-bottom: 1px solid #333333;
+}
 
-ul{list-style: none;
-   padding: 0;
-   flex-direction: column;
-   gap: 10px;}
+h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #00FF9C;
+}
 
+header h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
 
+header span {
+    color: #00FF9C;
+    font-size: 13px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+body > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+    flex: 0 0 220px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #111111;
+    border-right: 1px solid #333333;
+}
+
+.sidebar h2 {
+    color: #00FF9C;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    display: block;
+    color: #CCCCCC;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #00FF9C;
+    background-color: #1A2923;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+}
+
+section {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* ===== SIMULATION CANVAS ===== */
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: #050505;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    color: #00FF9C;
+    background-color: #111111;
+    border: 1px solid #00FF9C;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #00FF9C;
+    color: black;
+}
+
+/* ===== SMALL SCREENS ===== */
+
+@media (max-width: 700px) {
+    body > div {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
