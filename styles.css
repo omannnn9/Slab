@@ -15,20 +15,29 @@ div {display: flex;
      justify-content: center;
      align-items: center;}
 
-aside{flex: 1;
-      margin: 20px;
-      background-color: #111111;
-      width: 220px;
-      boreder-right:1px solid #333333;}
-
 main{flex: 3;}
 
 header{display:flex;
        justify-content: space-between;
        align-items: center;}
-
 a {
 color: white;
 padding: 10px;
 text-decoration: none;
 }
+
+a:hover{color: #00FF9C;
+       }
+
+.sidebar{flex: 1;
+         margin: 20px;
+         background-color: #111111;
+         width: 220px;
+         border-right:1px solid #333333;}
+
+ul{list-style: none;
+   padding: 0;
+   flex-direction: column;
+   gap: 10px;}
+
+
